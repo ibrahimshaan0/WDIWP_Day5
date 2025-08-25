@@ -5,6 +5,11 @@
 $white: #ffffff;
 $primary-color: #267668;
 $primary-h2: #121212;
+$p-body: #42414A;
+
+.p-24 {
+    padding: 24px;
+}
 
 .py-150 {
     padding-top: 150px;
@@ -30,6 +35,35 @@ body {
         background: $white;
         box-shadow: 0 10px 50px 0 #BEBDCB40;
         border-radius: 16px;
+
+        p {
+            color: $p-body;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 18px 0 32px 0;
+        }
+
+        .icon-wrapper {
+            position: relative;
+            height: 64px;
+            width: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            background: rgba(237, 239, 243);
+            border-radius: 50%;
+            overflow: hidden;
+            transition: 0.3s cubic-bezier(.98, .57, 1, 1);
+            // transition: 1s ease;
+
+        }
+
+        :hover {
+            .icon-wrapper {
+                transform: rotateY(180deg);
+            }
+        }
     }
 
     .heading-title {
@@ -52,19 +86,7 @@ body {
         gap: 16px;
     }
 
-    .icon-wrapper {
-        position: relative;
-        height: 64px;
-        width: 64px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        background: rgba(237, 239, 243);
-        border-radius: 50%;
-        transition: 0.3s cubic-bezier(.98, .57, 1, 1);
-        overflow: hidden;
-    }
+
 
     .icon-btn {
         padding: 12px 24px;
