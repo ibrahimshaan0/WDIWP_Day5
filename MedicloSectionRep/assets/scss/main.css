@@ -1,12 +1,26 @@
-* {
-  font-family: "inter", sans-serif;
-}
-
 .py-150 {
   padding-top: 150px;
   padding-bottom: 150px;
 }
 
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  background-color: #ffffff;
+}
+
+.our-services .service-card {
+  background: #ffffff;
+  box-shadow: 0 10px 50px 0 rgba(190, 189, 203, 0.2509803922);
+  border-radius: 16px;
+}
 .our-services .heading-title {
   font-size: 24px;
   line-height: 1.4;
@@ -16,6 +30,26 @@
   justify-content: left;
   align-items: center;
   gap: 8px;
+}
+.our-services .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+}
+.our-services .icon-wrapper {
+  position: relative;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: rgb(237, 239, 243);
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.98, 0.57, 1, 1);
+  overflow: hidden;
 }
 .our-services .icon-btn {
   padding: 12px 24px;
@@ -41,22 +75,17 @@
   color: #121212;
 }
 .our-services .service-list-wrapper {
+  background: url(../../imgs/servies/graphic.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top right;
   padding-top: 32px;
   margin-top: 18px;
 }
-.our-services .service-list {
+.our-services .services-list {
   row-gap: 24px;
-  background-color: aqua;
 }
-.our-services .service-list .card-title svg {
-  color: #267668;
-}
-.our-services .service-list a,
-.our-services .service-list a:link,
-.our-services .service-list .read-more-btn {
+.our-services .services-list .btn-read-more {
   color: #121212;
   text-decoration: none;
   font-size: 16px;

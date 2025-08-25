@@ -1,36 +1,33 @@
-// main {
-//     background-color: aqua;
-// }
+# WEB
 
+
+
+### Backup SCSS (index.scss)
+
+```scss
 $white: #ffffff;
 $primary-color: #267668;
 $primary-h2: #121212;
+
+* {
+    font-family: 'inter', sans-serif;
+}
+
+// a,
+// a:link,
+// a:active,
+// a:visited {
+//     text-decoration: none;
+//     color: currentColor;
+// }
 
 .py-150 {
     padding-top: 150px;
     padding-bottom: 150px;
 }
 
-a,
-a:link,
-a:active,
-a:visited {
-    text-decoration: none;
-    color: currentColor;
-}
-
-body {
-    font-family: 'inter', sans-serif;
-    background-color: $white;
-}
 
 .our-services {
-
-    .service-card {
-        background: $white;
-        box-shadow: 0 10px 50px 0 #BEBDCB40;
-        border-radius: 16px;
-    }
 
     .heading-title {
         font-size: 24px;
@@ -41,29 +38,6 @@ body {
         justify-content: left;
         align-items: center;
         gap: 8px;
-
-    }
-
-    .card-title {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 16px;
-    }
-
-    .icon-wrapper {
-        position: relative;
-        height: 64px;
-        width: 64px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        background: rgba(237, 239, 243);
-        border-radius: 50%;
-        transition: 0.3s cubic-bezier(.98, .57, 1, 1);
-        overflow: hidden;
     }
 
     .icon-btn {
@@ -93,7 +67,7 @@ body {
     }
 
     .service-list-wrapper {
-        background: url(../../imgs/servies/graphic.png);
+        // background: url(../../imgs/servies/graphic.png);
         background-repeat: no-repeat;
         background-size: auto;
         background-position: top right;
@@ -101,20 +75,29 @@ body {
         margin-top: 18px;
     }
 
-    .services-list {
+    .service-list {
         row-gap: 24px;
-        // background-color: brown; // testing
+        background-color: aqua;
 
-        .btn-read-more {
+        .card-title {
+            svg {
+                color: $primary-color;
+            }
+        }
+
+        a,
+        a:link,
+        .read-more-btn {
             color: $primary-h2;
             text-decoration: none;
             font-size: 16px;
             line-height: 24px;
             font-weight: 600;
         }
-
-
     }
+
+
+
 }
 
 @media (min-width: 1440px) {
@@ -125,3 +108,5 @@ body {
         }
     }
 }
+
+```
